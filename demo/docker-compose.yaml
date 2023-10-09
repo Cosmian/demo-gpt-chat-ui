@@ -1,0 +1,16 @@
+version: '3'
+
+services:
+  chat-ui-mongodb:
+    image: mongo:latest
+    ports:
+      - "27017:27017"
+
+  chat-ui-app:
+    build:
+      context: ..
+      dockerfile: Dockerfile
+    ports:
+      - "3000:3000"
+    depends_on:
+      - chat-ui-mongodb

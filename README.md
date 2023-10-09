@@ -24,6 +24,16 @@ A chat interface using open source models, eg OpenAssistant or Llama. It is a Sv
 5. [Deploying to a HF Space](#deploying-to-a-hf-space)
 6. [Building](#building)
 
+## COSMIAN DEMO
+
+In `./demo`
+
+```sh
+docker compose up
+```
+
+Open your browser at `http://localhost:3000`
+
 ##  No Setup Deploy
 
 If you don't want to configure, setup, and launch your own Chat UI yourself, you can use this option as a fast deploy alternative.
