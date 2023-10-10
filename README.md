@@ -26,6 +26,8 @@ A chat interface using open source models, eg OpenAssistant or Llama. It is a Sv
 
 ## COSMIAN DEMO
 
+* Run
+
 In `./demo`
 
 ```sh
@@ -33,6 +35,19 @@ docker compose up
 ```
 
 Open your browser at `http://localhost:3000`
+
+* Verify
+
+```sh
+mse cloud login # as TechCosmian
+mse cloud context --export [app_ui]
+```
+
+```sh
+git clone https://github.com/Cosmian/mse-gpt
+cd mse-gpt
+mse cloud verify --context [context.toml] --code ./mse_src [app_url]
+```
 
 ##  No Setup Deploy
 
